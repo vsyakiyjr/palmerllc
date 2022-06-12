@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID; 
 use Laravel\Nova\Fields\Text;
 
-class Page extends Resource
+class Page 
 {
     /**
      * The model the resource corresponds to.
