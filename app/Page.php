@@ -4,6 +4,8 @@ namespace App;
  
 class Page extends Authenticatable
 {
+    use Sluggable;
+	
     protected $table = 'pages';
 	
     /**
@@ -15,5 +17,17 @@ class Page extends Authenticatable
         'title', 'slug', 'content',
     ]; 
 	
-	
+	/**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
 }
