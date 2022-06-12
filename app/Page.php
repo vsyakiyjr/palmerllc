@@ -2,9 +2,10 @@
 
 namespace App;
  
+use Illuminate\Database\Eloquent\Model; 
 use Cviebrock\EloquentSluggable\Sluggable;
  
-class Page 
+class Page extends Model
 {
     use Sluggable;
 	
