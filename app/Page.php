@@ -2,6 +2,8 @@
 
 namespace App;
  
+use Cviebrock\EloquentSluggable\Sluggable;
+ 
 class Page 
 {
     use Sluggable;
