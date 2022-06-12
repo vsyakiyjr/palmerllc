@@ -2,7 +2,7 @@
 
 namespace App;
  
-class Page extends Authenticatable
+class Page 
 {
     use Sluggable;
 	
